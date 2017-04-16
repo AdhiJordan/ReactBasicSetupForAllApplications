@@ -1,7 +1,7 @@
 var React = require('react');
  var AddTodo = React.createClass ({
  	handleSubmit: function (e) {
- 		
+ 		e.preventDefault();
  		var todoInput = this.refs.addTodosInput.value;
 
  		if(todoInput.length > 0) {
@@ -9,7 +9,7 @@ var React = require('react');
 			this.props.onAddTodo(todoInput);
  		}
  		else {
- 			this.refs.todoInput.focus();
+ 			this.refs.addTodosInput.focus();
  		}
  		
  	},
