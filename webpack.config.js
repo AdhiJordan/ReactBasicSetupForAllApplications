@@ -24,7 +24,8 @@ module.exports = {
     root: __dirname,
     modulesDirectories: [
         'node_modules',
-        './app/components'
+        './app/components',
+        './app/api'
     ],
     alias: {
       applicationStyles: 'app/styles/app.scss'
@@ -35,7 +36,7 @@ module.exports = {
     loaders: [
       {
         loader: 'babel-loader',
-        query: {
+        query: { 
           presets: ['react', 'es2015', 'stage-0']
         },
         test: /\.jsx?$/,
