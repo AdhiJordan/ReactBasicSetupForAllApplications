@@ -35,7 +35,7 @@ var React = require('react');
  				
  					<div className="card-section">
  						<button type="submit" className="success button">
- 							Save
+ 							Save It
  						</button>
  					</div>
  				</form>

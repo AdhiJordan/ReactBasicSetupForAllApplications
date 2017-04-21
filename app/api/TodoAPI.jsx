@@ -17,6 +17,17 @@ module.exports = {
 		}
 
 		return $.isArray(todos) ? todos : [];
+},
+		filterSearch: function (todos, show, textValue) {
+			var filterUpdate = todos;
+
+			//filter by show
+			filterUpdate = filterUpdate.filter((todo) => {
+				return !todo.completed || show;
+			});
+
+			return filterUpdate;
+		}
 		// if($.isArray(todos)) {
 		// 	return todos
 
@@ -25,4 +36,3 @@ module.exports = {
 		// 	return [];
 		// }
 	}
-};
