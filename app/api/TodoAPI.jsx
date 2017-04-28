@@ -26,6 +26,18 @@ module.exports = {
 				return !todo.completed || show;
 			});
 
+			filterUpdate.sort((a,b) {
+				if(a.completed === false && b.completed)
+				return -1;
+			else if(a.completed && !b.completed) {
+				return 1;
+
+			}
+			else {
+				return 0;
+			}
+			});
+
 			return filterUpdate;
 		}
 		// if($.isArray(todos)) {
