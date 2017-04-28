@@ -4,7 +4,8 @@
 @import "base/foundation-settings";
 @import "foundation";
 @include foundation-everything;
+
+// Components
 @import "components/page_title";
 @import "components/container";
 @import "components/todo";
-// Components
