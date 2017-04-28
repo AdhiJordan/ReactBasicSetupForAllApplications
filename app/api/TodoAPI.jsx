@@ -26,7 +26,7 @@ module.exports = {
 				return !todo.completed || show;
 			});
 
-			filterUpdate.sort((a,b) {
+			filterUpdate.sort((a,b) => {
 				if(a.completed === false && b.completed)
 				return -1;
 			else if(a.completed && !b.completed) {
