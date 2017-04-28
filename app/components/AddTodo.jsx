@@ -17,29 +17,20 @@ var React = require('react');
  		return (
  			
 
- 			<div className="card">
+ 				<div className="container_footer">
  				<form onSubmit={this.handleSubmit}>
- 					<div className="card-divider">
- 						
- 							<div className="row">
- 								<div className="medium-6 columns">
- 									<label> Enter Todo
- 										<input type="text" 
- 										placeholder="enter todo here"
- 										ref="addTodosInput" />
- 									</label>
- 								</div>
- 							</div>
- 						
- 					</div>
- 				
- 					<div className="card-section">
- 						<button type="submit" className="success button">
- 							Save It
- 						</button>
- 					</div>
+ 					
+ 					<input type="text" 
+ 					placeholder="enter todo here"
+ 					ref="addTodosInput" />
+ 					
+ 					<button type="submit" className="success button">
+ 					Save It
+ 					</button>
+ 					
  				</form>
- 			</div>
+ 				</div>
+ 			
 
  			);
  	}

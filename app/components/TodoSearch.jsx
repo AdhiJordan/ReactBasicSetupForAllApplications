@@ -9,10 +9,9 @@ var TodoSearch = React.createClass ({
 	},
 	render: function () {
 		return (
-			<div>
-				<form>
-					<div className="row">
-						<div className="medium-6 columns">
+			<div className="container_header">
+				
+					
 							<label>Search Todo Here
 								<input type="text" 
 								ref = "searchText"
@@ -26,13 +25,9 @@ var TodoSearch = React.createClass ({
 								onChange={this.handleSearch} />
 								<label for="checkbox1">Show some Todo Completed</label>
 							</div>
-						</div>
+					
 
-						
-					</div>
-
-
-				</form>
+			
 				
 
 			</div>
