@@ -38,6 +38,11 @@ module.exports = {
 			}
 			});
 
+			filterUpdate = filterUpdate.filter((todo) => {
+				var text = todo.text.toLowerCase();
+				return textValue.length === 0 || text.indexOf(textValue) > -1;
+			});
+			
 			return filterUpdate;
 		}
 		// if($.isArray(todos)) {
