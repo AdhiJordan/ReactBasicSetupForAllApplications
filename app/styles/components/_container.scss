@@ -1,12 +1,12 @@
 .container {
-	background: #f5f5f5;
-	border: 1px solid #eeeeee;
+	background: $light-grey;
+	border: 1px solid $light-grey-border;
 	border-radius: 5px;
 	padding: 0;
 	margin-bottom: 2rem;
 }
 .container_header {
-	border-bottom: 1px solid #eeeeee;
+	border-bottom: 1px solid $light-grey-border;
 	padding: 1rem;
 }
 label {
@@ -19,10 +19,10 @@ label {
 }
 .container_footer {
 	padding: 1rem 1rem 0 1rem;
-	border-top: 1px solid #eeeeee;
+	border-top: 1px solid $light-grey-border;
 }
 .container-message {
-	color: #aaa;
+	color: $light-color;
 	text-align: center;
 	margin: 2rem auto;
 }
