@@ -17,7 +17,7 @@ var React = require('react');
  		return (
  			
 
- 				<div className="container_footer">
+ 				<div className="container__footer">
  				<form onSubmit={this.handleSubmit}>
  					
  					<input type="text" 

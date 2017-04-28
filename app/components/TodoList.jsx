@@ -7,7 +7,7 @@ var TodoList = React.createClass ({
 			var renderFunction = () => {
 				if(todos.length === 0) {
 					return (
-						<p className="container-message">Add some Tasks</p>
+						<p className="container__message">Add some Tasks</p>
 						);
 				}
 				return todos.map((todosample) => {

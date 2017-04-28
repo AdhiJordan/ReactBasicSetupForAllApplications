@@ -9,15 +9,15 @@ var TodoSearch = React.createClass ({
 	},
 	render: function () {
 		return (
-			<div className="container_header">
+			<div className="container__header">
 				
 					
-							<label>Search Todo Here
+							<div>
 								<input type="text" 
 								ref = "searchText"
 								placeholder="Search your todo here"
 								onChange={this.handleSearch} />
-							</label>
+							</div>
 
 							<div>
 								<input id="checkbox1" type="checkbox"
